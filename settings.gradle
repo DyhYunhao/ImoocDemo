@@ -1,3 +1,4 @@
+include ':autoupdate'
 include ':alarmservice'
 include ':app'
 rootProject.name = "ImoocDemo"

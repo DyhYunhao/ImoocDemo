@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AutoUpdate</string>
+    <string name="update_download_failed">failed</string>
+    <string name="update_download_failed_msg">update_download_failed_msg</string>
+    <string name="update_download_start">start</string>
+    <string name="update_download_start_msg">update_download_start_msg</string>
+    <string name="update_download_finish">finish</string>
+    <string name="update_download_processing">processing</string>
+    <string name="update_download_tip">tip</string>
+    <string name="update_install">install</string>
+    <string name="update_new_version">new version</string>
+    <string name="update_title">title</string>
+    <string name="view">view</string>
+</resources>
