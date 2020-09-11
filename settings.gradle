@@ -1,3 +1,4 @@
+include ':handlerdemo1'
 include ':autoupdate'
 include ':alarmservice'
 include ':app'
