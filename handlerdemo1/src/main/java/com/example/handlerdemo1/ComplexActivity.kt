@@ -12,8 +12,11 @@ import android.util.Log
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import java.lang.ref.WeakReference
+import kotlin.math.log
 
-
+/**
+ * 子线程中用Handler
+ */
 class ComplexActivity : AppCompatActivity() {
 
     private lateinit var main_image_view: ImageView
@@ -95,4 +98,52 @@ class ComplexActivity : AppCompatActivity() {
             }
         }
 
+    class LooperThread1: Thread() {
+        lateinit var mHandler: Handler
+
+        override fun run() {
+            super.run()
+            Looper.prepare()
+            mHandler = @SuppressLint("HandlerLeak")
+            object: Handler(){
+                override fun handleMessage(msg: Message) {
+                    super.handleMessage(msg)
+                    Log.d("TAG", "LooperThread1---->what = $msg.what ,currentThread: " + Thread.currentThread())
+                }
+            }
+            mHandler.sendEmptyMessage(1)
+            Looper.loop()
+            mHandler.sendEmptyMessage(2)
+            mHandler.sendEmptyMessage(3)
+            mHandler.sendEmptyMessage(4)
+            Looper.loop()
+        }
+    }
+
+    class LooperThread2: Thread() {
+        lateinit var mHandler: Handler
+
+        override fun run() {
+            super.run()
+            mHandler = object: Handler(Looper.getMainLooper()) {
+                override fun handleMessage(msg: Message) {
+                    super.handleMessage(msg)
+                    Log.d("TAG", "LooperThread2 ok")
+                }
+            }
+            mHandler.sendEmptyMessage(1)
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        mHandler.removeCallbacksAndMessages(null);
+
+        if (bitmapObject != null && !bitmapObject!!.isRecycled()) {
+            bitmapObject!!.recycle();
+            main_image_view.setImageBitmap(null);
+            System.gc();
+            Log.e("TAG", "GC");
+        }
+    }
 }
