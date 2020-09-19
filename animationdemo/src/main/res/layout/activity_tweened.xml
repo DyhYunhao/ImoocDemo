@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TweenedActivity">
+
+    <ImageView
+        android:id="@+id/iv_tween_lu"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/a_2" />
+
+    <ImageView
+        android:id="@+id/iv_tween_2"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/iv_tween_lu"
+        android:src="@drawable/a_2" />
+
+    <ImageView
+        android:id="@+id/iv_tween_3"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/iv_tween_2"
+        android:src="@drawable/a_2" />
+
+    <ImageView
+        android:id="@+id/iv_tween_4"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/iv_tween_3"
+        android:src="@drawable/a_2" />
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_alignParentBottom="true">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_alpha"-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:text="@string/alpha"-->
+<!--            android:textAllCaps="false" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_rotate"-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:text="@string/rotate"-->
+<!--            android:textAllCaps="false" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_scale"-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:text="@string/scale"-->
+<!--            android:textAllCaps="false" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_translate"-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:text="@string/translate"-->
+<!--            android:textAllCaps="false" />-->
+<!--    </LinearLayout>-->
+</RelativeLayout>
