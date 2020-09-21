@@ -24,24 +24,5 @@ class TweenedActivity : AppCompatActivity() {
         var animation4 = AnimationUtils.loadAnimation(this, R.anim.translate_anim)
         iv_tween_4.animation = animation4
 
-//        btn_alpha.setOnClickListener {
-//            var animation = AnimationUtils.loadAnimation(this, R.anim.alpha_anim)
-//            iv_tween_lu.animation = animation
-//        }
-
-//        btn_rotate.setOnClickListener {
-//            var animation = AnimationUtils.loadAnimation(this, R.anim.rotate_anim)
-//            iv_tween_lu.animation = animation
-//        }
-//
-//        btn_scale.setOnClickListener {
-//            var animation = AnimationUtils.loadAnimation(this, R.anim.scale_anim)
-//            iv_tween_lu.animation = animation
-//        }
-//
-//        btn_translate.setOnClickListener {
-//            var animation = AnimationUtils.loadAnimation(this, R.anim.translate_anim)
-//            iv_tween_lu.animation = animation
-//        }
     }
 }
