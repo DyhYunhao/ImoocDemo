@@ -6,4 +6,7 @@
     <string name="scale">scale</string>
     <string name="translate">translate</string>
     <string name="tween">补间动画</string>
+    <string name="surfaceview">surfaceView</string>
+    <string name="sin">sin</string>
+    <string name="cos">cos</string>
 </resources>

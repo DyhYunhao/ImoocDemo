@@ -19,5 +19,9 @@ class MainActivity : AppCompatActivity() {
         btn_toTween.setOnClickListener {
             startActivity(Intent(this, TweenedActivity::class.java))
         }
+
+        btn_surfaceView.setOnClickListener {
+            startActivity(Intent(this, SurfaceViewActivity::class.java))
+        }
     }
 }
