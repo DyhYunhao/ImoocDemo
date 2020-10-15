@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="Demo3Binding">
+        <import type="com.example.databinderdemo1.bean.ObservableGoodsBean"/>
+
+        <import type="com.example.databinderdemo1.DemoActivity3.ObservableGoodsHandler" />
+
+        <variable
+            name="observableGoods"
+            type="ObservableGoodsBean" />
+
+        <variable
+            name="observableGoodsHandler"
+            type="ObservableGoodsHandler" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical"
+        tools:context=".DemoActivity3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{observableGoods.name}" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{observableGoods.details}" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(observableGoods.price)}" />
+
+        <Button
+            android:onClick="@{()->observableGoodsHandler.changeGoodsName()}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="改变属性 name"/>
+
+        <Button
+            android:onClick="@{()->observableGoodsHandler.changeGoodsDetails()}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="改变属性 details和price"/>
+
+    </LinearLayout>
+</layout>

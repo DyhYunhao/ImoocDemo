@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="Demo2Binding">
+        <import type="com.example.databinderdemo1.bean.GoodsBean"/>
+        
+        <import type="com.example.databinderdemo1.DemoActivity2.GoodsHandler" />
+        
+        <variable
+            name="goods"
+            type="GoodsBean" />
+
+        <variable
+            name="goodsHandler"
+            type="GoodsHandler" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical"
+        tools:context=".DemoActivity2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{goods.name}" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{goods.details}" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(goods.price)}" />
+
+        <Button
+            android:onClick="@{()->goodsHandler.changeGoodsName()}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="改变属性 name"/>
+
+        <Button
+            android:onClick="@{()->goodsHandler.changeGoodsDetails()}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="改变属性 details和price"/>
+
+    </LinearLayout>
+</layout>
