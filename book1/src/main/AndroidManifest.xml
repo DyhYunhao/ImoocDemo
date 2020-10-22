@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ImoocDemo">
-        <activity android:name=".cp2.Demo2Activity"></activity>
+        <activity android:name=".BinderPoolActivity"></activity>
+        <activity android:name=".cp2.Demo2Activity" />
         <activity
             android:name=".cp1.Demo1Activity"
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
-            android:launchMode="singleInstance"></activity>
+            android:launchMode="singleInstance" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

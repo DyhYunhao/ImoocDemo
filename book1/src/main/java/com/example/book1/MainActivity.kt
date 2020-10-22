@@ -24,6 +24,11 @@ class MainActivity : AppCompatActivity() {
         mBtnCp2.setOnClickListener {
             startActivity(Intent(this, Demo2Activity::class.java))
         }
+
+        val mBtnBinderPool: Button = findViewById(R.id.btn_binder_pool)
+        mBtnBinderPool.setOnClickListener {
+            startActivity(Intent(this, BinderPoolActivity::class.java))
+        }
     }
 
 
