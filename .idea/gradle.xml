@@ -15,8 +15,10 @@
             <option value="$PROJECT_DIR$/animationdemo" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/autoupdate" />
+            <option value="$PROJECT_DIR$/book1" />
             <option value="$PROJECT_DIR$/databinderdemo1" />
             <option value="$PROJECT_DIR$/handlerdemo1" />
+            <option value="$PROJECT_DIR$/webviewdemo" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

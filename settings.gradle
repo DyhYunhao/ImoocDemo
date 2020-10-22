@@ -1,3 +1,5 @@
+include ':book1'
+include ':webviewdemo'
 include ':databinderdemo1'
 include ':animationdemo'
 include ':handlerdemo1'
