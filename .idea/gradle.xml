@@ -18,6 +18,8 @@
             <option value="$PROJECT_DIR$/book1" />
             <option value="$PROJECT_DIR$/databinderdemo1" />
             <option value="$PROJECT_DIR$/handlerdemo1" />
+            <option value="$PROJECT_DIR$/ipcdemo" />
+            <option value="$PROJECT_DIR$/mmkvdemo" />
             <option value="$PROJECT_DIR$/webviewdemo" />
           </set>
         </option>

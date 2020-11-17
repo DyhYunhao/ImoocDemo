@@ -1,0 +1,2 @@
+1.横竖屏切换时Activity的生命周期变化?
+  如果自己没有配置android:ConfigChanges，这时默认让系统处理，就会重建Activity，此时Activity的生命周期会走一遍
