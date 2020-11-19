@@ -1,3 +1,4 @@
+include ':recyclerviewdemo'
 include ':ipcdemo'
 include ':mmkvdemo'
 include ':book1'
