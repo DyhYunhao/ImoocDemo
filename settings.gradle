@@ -1,3 +1,6 @@
+include ':bizzer'
+include ':leakcanarydemo'
+include ':leakcanarydemo'
 include ':recyclerviewdemo'
 include ':ipcdemo'
 include ':mmkvdemo'

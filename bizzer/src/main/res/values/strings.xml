@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">bizzer</string>
+    <string name="wave">贝塞尔曲线波浪</string>
+    <string name="bezier2">二阶贝塞尔曲线</string>
+    <string name="bezier3">三阶贝塞尔曲线</string>
+    <string name="point_beat">跳动的球</string>
+    <string name="start">开始动画</string>
+    <string name="bezier2_line">去除辅助线</string>
+    <string name="left">控制left点</string>
+    <string name="noSub">去除辅助线</string>
+    <string name="right">控制Right点</string>
+</resources>
